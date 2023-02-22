@@ -4,7 +4,7 @@ import {Text, View, StyleSheet} from 'react-native';
 export default function Profile(props) {
   return (
     <View>
-        <Text>Profile</Text>
+        <Text>Écran : Profile</Text>
     </View>
   );
 }

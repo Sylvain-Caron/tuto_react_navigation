@@ -5,7 +5,7 @@ import NotificationsDetails from '../components/NotificationsDetails';
 
 const Stack = createStackNavigator();
 
-export default function NotificationsNavigation() {
+export default function StackNotificationsNavigation() {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName='Notifications'>
       <Stack.Screen name="Notifications" component={Notifications} />

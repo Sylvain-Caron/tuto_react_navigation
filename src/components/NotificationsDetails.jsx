@@ -4,7 +4,7 @@ import {Text, View, StyleSheet} from 'react-native';
 export default function NotificationsDetails(props) {
   return (
     <View>
-        <Text>NotificationsDetails</Text>
+        <Text>Écran : NotificationsDetails</Text>
     </View>
   );
 }

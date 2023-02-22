@@ -5,7 +5,7 @@ export default function Settings(props) {
 
   return (
     <View>
-        <Text>Settings</Text>
+        <Text>Écran : Settings</Text>
     </View>
   );
 }

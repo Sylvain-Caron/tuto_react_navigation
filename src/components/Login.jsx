@@ -8,16 +8,22 @@ export default function Login(props) {
   const navigation = useNavigation()
   return (
     <View>
-        <Text>Login</Text>
+        <Text>Écran : Login</Text>
         <TouchableOpacity onPress={() => navigation.navigate('OTHER_ROUTE')}>
-            <Text >GO TO Other</Text>
+            <Text style={styles.text}>GO TO Other</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-            <Text >GO TO Settings</Text>
+            <Text style={styles.text}>GO TO Settings</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-            <Text >GO TO Home</Text>
+            <Text style={styles.text}>GO TO Home</Text>
         </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  text: {
+      textAlign: 'center'
+  }
+})

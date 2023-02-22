@@ -7,13 +7,19 @@ export default function Notifications(props) {
 
   return (
     <View>
-        <Text>Notifications</Text>
+        <Text>Écran : Notifications</Text>
         <TouchableOpacity onPress={() => navigation.navigate('NotificationsDetails')}>
-            <Text >GO TO Notifications details</Text>
+            <Text style={styles.text}>GO TO Notifications details</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-            <Text >LOGOUT</Text>
+            <Text style={styles.text}>LOGOUT</Text>
         </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  text: {
+      textAlign: 'center'
+  }
+});

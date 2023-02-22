@@ -5,7 +5,7 @@ import {Text, View, StyleSheet} from 'react-native';
 export default function Other(props) {
   return (
     <View>
-        <Text>Other</Text>
+        <Text>Écran : Other</Text>
     </View>
   );
 }

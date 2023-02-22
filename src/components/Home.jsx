@@ -9,9 +9,9 @@ export default function Home(props) {
     const [index, setIndex] = useState(0);
 
     const tabs = [
-        { key: 'tab1', title: 'Onglet 1', content: () => <View><Text>Contenu de l'onglet 1</Text></View> },
-        { key: 'tab2', title: 'Onglet 2', content: () => <View><Text>Contenu de l'onglet 2</Text></View> },
-        { key: 'tab3', title: 'Onglet 3', content: () => <View><Text>Contenu de l'onglet 3</Text></View> },
+        { key: 'tab1', title: 'Onglet 1', content: () => <View><Text style={styles.text}>Contenu de l'onglet 1</Text></View> },
+        { key: 'tab2', title: 'Onglet 2', content: () => <View><Text style={styles.text}>Contenu de l'onglet 2</Text></View> },
+        { key: 'tab3', title: 'Onglet 3', content: () => <View><Text style={styles.text}>Contenu de l'onglet 3</Text></View> },
     ];
 
     const renderScene = SceneMap(
@@ -31,3 +31,9 @@ export default function Home(props) {
         />
     );
 }
+
+const styles = StyleSheet.create({
+    text: {
+        textAlign: 'center'
+    }
+});
